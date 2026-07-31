@@ -1,8 +1,16 @@
 aid: network-solutions
 name: Network Solutions
-description: Network Solutions is a company surfaced as a portfolio company of battery-ventures and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Network Solutions is one of the original ICANN-accredited domain registrars,
+  founded in 1979 and operator of the .com, .net and .org registries under the
+  InterNIC/NSF cooperative agreement through the 1990s. Today it is a consumer
+  and small-business web-services brand of Newfold Digital, selling domain
+  registration and transfers, WHOIS lookup, shared and WordPress web hosting,
+  SSL/TLS certificates, professional email, a website builder, and online
+  marketing services. It operates a domain reseller program (via ResellerClub)
+  and an affiliate program, but does not publish a public developer API,
+  developer portal, or OpenAPI documentation for third-party integration; the
+  reseller and affiliate channels are the only programmatic-adjacent surfaces.
 url: https://raw.githubusercontent.com/api-evangelist/network-solutions/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +18,50 @@ x-backed-by:
 - battery-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.networksolutions.com/favicon.ico
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Domains
+- Domain Registration
+- Domain Registrar
+- Web Hosting
+- SSL Certificates
+- Email
+- Website Builder
+- Newfold Digital
 apis: []
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
+common:
+- type: DomainSecurity
+  url: security/network-solutions-domain-security.yml
+- type: Website
+  url: https://www.networksolutions.com/
+- type: Support
+  url: https://www.networksolutions.com/help
+- type: Blog
+  url: https://www.networksolutions.com/blog/
+- type: TermsOfService
+  url: https://legal.newfold.com/TermsOfUse.pdf
+- type: PrivacyPolicy
+  url: https://newfold.com/privacy-center
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
