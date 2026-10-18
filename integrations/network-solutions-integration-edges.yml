@@ -1,0 +1,98 @@
+edges:
+- partner_name: CCADB root programs (Apple, Chrome, Microsoft, Mozilla)
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://ccadb.my.salesforce-sites.com/ccadb/AllCertificateRecordsCSVFormatv4
+  category: publicly-trusted CA
+  contract_reference:
+    register: CCADB AllCertificateRecordsCSVFormatv4 (ccadb.my.salesforce-sites.com)
+    standard: CCADB root programs
+    spec_file: null
+    role: root-ca-owner
+    registered_name: Network Solutions
+    register_id: Network Solutions
+    matched_domain: networksolutions.com
+    matched_by: domain
+    domain_source: wikidata Q2467284 'Network Solutions' P856 https://www.networksolutions.com/ (labelled provenance
+      step)
+    country:
+    - United Kingdom
+    - United States of America
+    audit_types:
+    - WebTrust
+    auditors_not_linked:
+    - BDO International Limited
+    capabilities: []
+    signal_note: certified_products = one entry per ROOT STORE (Apple / Chrome / Microsoft / Mozilla), current when
+      any root is Included, lapsed when every root there is Removed / Blocked / Disabled; root counts, audit seals
+      and auditors are context, never counted. A subordinate operator is participation only
+    detected_by: sweep-pki-encryption.py
+    detected: '2026-10-18'
+    identity_source: wikidata Q2467284 'Network Solutions' P856 https://www.networksolutions.com/ (labelled provenance
+      step)
+    certified_products:
+    - product: Apple root store
+      store: Apple
+      lapsed: true
+      status:
+      - Blocked
+    - product: Chrome root store
+      store: Chrome
+      lapsed: true
+      status:
+      - Removed
+    - product: Microsoft root store
+      store: Microsoft
+      lapsed: true
+      status:
+      - Disabled
+      - Removed
+    - product: Mozilla root store
+      store: Mozilla
+      lapsed: true
+      status:
+      - Removed
+  detected_by: sweep-pki-encryption.py
+  first_seen: '2026-10-18'
+- partner_name: CA/Browser Forum
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://cabforum.org/about/membership/members/
+  category: CA/Browser Forum certification authority member
+  contract_reference:
+    register: CA/Browser Forum members (cabforum.org/about/membership/members)
+    standard: CA/Browser Forum
+    spec_file: null
+    role: cabf-ca-member
+    registered_name: Network Solutions
+    matched_domain: networksolutions.com
+    matched_by: domain
+    domain_source: wikidata Q2467284 'Network Solutions' P856 https://www.networksolutions.com/ (labelled provenance
+      step)
+    signal_note: membership is participation in the Baseline Requirements body; a listing alone
+    detected_by: sweep-pki-encryption.py
+    detected: '2026-10-18'
+    identity_source: wikidata Q2467284 'Network Solutions' P856 https://www.networksolutions.com/ (labelled provenance
+      step)
+  detected_by: sweep-pki-encryption.py
+  first_seen: '2026-10-18'
+generated: '2026-10-18'
+method: searched
+source:
+- https://ccadb.my.salesforce-sites.com/ccadb/AllCertificateRecordsCSVFormatv4
+- https://ccadb.my.salesforce-sites.com/mozilla/CAInformationReportCSVFormat
+- https://ccadb.my.salesforce-sites.com/ccadb/AllCAAIdentifiersReportCSV
+- https://cabforum.org/about/membership/members/
+checked:
+- https://cabforum.org/about/membership/members/
+- https://ccadb.my.salesforce-sites.com/ccadb/AllCAAIdentifiersReportCSV
+- https://ccadb.my.salesforce-sites.com/ccadb/AllCertificateRecordsCSVFormatv4
+- https://ccadb.my.salesforce-sites.com/mozilla/CAInformationReportCSVFormat
